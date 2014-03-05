@@ -1,0 +1,6 @@
+{
+  "name": "example",
+  "devDependencies": {
+    "minihash": "0.0.2"
+  }
+}

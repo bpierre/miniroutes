@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>miniroutes demo</title>
+  <style>
+    body {
+      font: 24px sans-serif;
+    }
+    label {
+      display: inline-block;
+      width: 200px;
+    }
+    input {
+      font: inherit;
+      width: 400px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <p><label>Current hash:</label> <input id=hash></p>
+
+  <p>
+    Matched route:<br>
+    <label>Name:</label> <input id=route-name readonly><br>
+    <label>Params:</label> <input id=route-params readonly><br>
+    <label>Original value:</label> <input id=route-value readonly><br>
+  </p>
+
+  <div>
+    Some links:
+    <ul>
+      <li><a href="#!/foo">foo</a></li>
+      <li><a href="#!/bar">bar</a></li>
+      <li><a href="#!/bar/param1">bar/param1</a></li>
+      <li><a href="#!/bar/param1/param2">bar/param1/param2</a></li>
+      <li><a href="#!/baz">baz</a></li>
+    </ul>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
