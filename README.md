@@ -1,4 +1,4 @@
-# miniroutes
+# miniroutes [![Build Status](https://travis-ci.org/bpierre/miniroutes.png?branch=master)](https://travis-ci.org/bpierre/miniroutes)
 
 Mini routing system based on regular expressions.
 
@@ -39,7 +39,7 @@ routing('bar/param1/param2');
 //                   value: 'bar/param1/param2' }
 ```
 
-You can also combine it with [minihash](https://github.com/bpierre/minihash):
+You can also combine miniroutes with [minihash](https://github.com/bpierre/minihash):
 
 ```js
 var miniroutes = require('miniroutes');
@@ -52,10 +52,21 @@ var hash = minihash('!/', miniroutes(routes, function(route) {
 }));
 ```
 
+## Installation
+
+```
+$ npm install miniroutes
+```
+
+## Browser compatibility
+
+IE9+ and modern browsers.
+
+[![Browser support](https://ci.testling.com/bpierre/miniroutes.png)](https://ci.testling.com/bpierre/miniroutes)
+
 ## License
 
 [MIT](http://pierre.mit-license.org/)
-
 
 ## Special thanks
 
