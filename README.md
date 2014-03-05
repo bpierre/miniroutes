@@ -2,6 +2,8 @@
 
 Mini routing system based on regular expressions.
 
+<p align="center"><img width="763" height="256" alt="miniroutes illustration" src="http://scri.ch/ls3.png"></p>
+
 ## Usage
 
 ```js
@@ -53,3 +55,8 @@ var hash = minihash('!/', miniroutes(routes, function(route) {
 ## License
 
 [MIT](http://pierre.mit-license.org/)
+
+
+## Special thanks
+
+Illustration made by [Raphaël Bastide](http://raphaelbastide.com/) with [scri.ch](http://scri.ch/).
