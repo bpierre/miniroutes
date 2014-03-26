@@ -46,15 +46,15 @@ function matches(re, path) {
   return matches;
 }
 
-function getRoute(paths, value) {
+function getRoute(paths, path) {
   var route = {
     name: null,
     params: [],
-    value: value
+    path: path
   };
   for (var i=0, l = paths.length, params; i < l; i++) {
     // Valid path found
-    params = matches(paths[i][1], value);
+    params = matches(paths[i][1], path);
     if (params !== null) {
       route.name = paths[i][0];
       route.params = params;

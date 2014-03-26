@@ -15,49 +15,49 @@ test('miniroute matches', function(t) {
   expected = {
     name: null,
     params: [],
-    value: 'abc'
+    path: 'abc'
   };
   routing('abc');
 
   expected = {
     name: 'foo',
     params: [],
-    value: 'foo'
+    path: 'foo'
   };
   routing('foo');
 
   expected = {
     name: 'foo',
     params: [],
-    value: 'foo/'
+    path: 'foo/'
   };
   routing('foo/');
 
   expected = {
     name: null,
     params: [],
-    value: 'foo/abc'
+    path: 'foo/abc'
   };
   routing('foo/abc');
 
   expected = {
     name: 'bar',
     params: ['abc', 'def'],
-    value: 'bar/abc/def'
+    path: 'bar/abc/def'
   };
   routing('bar/abc/def');
 
   expected = {
     name: 'bar',
     params: ['abc', null],
-    value: 'bar/abc'
+    path: 'bar/abc'
   };
   routing('bar/abc');
 
   expected = {
     name: 'bar',
     params: [null, null],
-    value: 'bar'
+    path: 'bar'
   };
   routing('bar');
 });
