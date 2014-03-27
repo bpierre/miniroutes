@@ -19,8 +19,10 @@ var paths = [
 
 ];
 
-var routing = miniroutes(paths, function(route) {
-  console.log(route); // matched route
+var routing = miniroutes(paths, function(route, previous) {
+  // `route` is the matched route
+  // `previous` is the previously matched route
+  console.log(route);
 });
 
 routing('foo');
@@ -47,8 +49,8 @@ var minihash = require('minihash');
 
 var routes = [ /* … */ ];
 
-var hash = minihash('!/', miniroutes(routes, function(route) {
-  console.log(route);
+var hash = minihash('!/', miniroutes(routes, function(route, previous) {
+  console.log(route, previous);
 }));
 ```
 

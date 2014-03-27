@@ -30,8 +30,12 @@
  */
 
 module.exports = function createRouting(paths, cb) {
+  var route = null;
+  var previous = null;
   return function updatePath(path) {
-    cb(getRoute(paths, path));
+    previous = route;
+    route = getRoute(paths, path);
+    cb(route, previous);
   };
 }
 
