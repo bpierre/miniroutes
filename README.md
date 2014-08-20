@@ -68,7 +68,7 @@ IE9+ and modern browsers.
 
 ## License
 
-[MIT](http://pierre.mit-license.org/)
+[MIT](LICENSE)
 
 ## Special thanks
 
