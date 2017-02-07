@@ -28,17 +28,17 @@ var routing = miniroutes(paths, function(route, previous) {
 routing('foo');
 // Console output: { name: 'foo',
 //                   params: [],
-//                   value: 'foo' }
+//                   path: 'foo' }
 
 routing('bar/param1');
 // Console output: { name: 'bar',
 //                   params: ['param1', null],
-//                   value: 'bar/param1' }
+//                   path: 'bar/param1' }
 
 routing('bar/param1/param2');
 // Console output: { name: 'bar',
 //                   params: ['param1', 'param2'],
-//                   value: 'bar/param1/param2' }
+//                   path: 'bar/param1/param2' }
 ```
 
 You can also combine miniroutes with [minihash](https://github.com/bpierre/minihash):
