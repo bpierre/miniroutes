@@ -2,7 +2,7 @@
 
 Mini routing system based on regular expressions.
 
-<p align="center"><img width="763" height="256" alt="miniroutes illustration" src="http://scri.ch/ls3.png"></p>
+<p align="center"><img width="763" height="256" alt="miniroutes illustration" src="http://scri.ch/ls3-2x.png"></p>
 
 ## Usage
 
